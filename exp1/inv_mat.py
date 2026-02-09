@@ -1,4 +1,17 @@
-m=input("Enter the message: ")
-k=input("Enter the keyword: ")
+import numpy as np
 
-matrix=[['x'for j in range(5)]for i in range (5)]
+A=np.array([[1, 2],[3, 4]])
+det_A=np.linalg.det(A)
+print(det_A)
+
+
+from sympy import Matrix
+
+A = Matrix([
+    [6, 24, 1],
+    [13, 16, 10],
+    [20, 17, 15]
+])
+A_inv=A.inv_mod(26)
+print(A_inv)
+
