@@ -58,6 +58,8 @@ def encryption(m,matrix):
             m=m[:i+1]+'x'+m[i+1:]
         if m[i]=='j':
             m=m[:i]+'i'+m[i+1:]
+        if m[i+1]=='j':
+            m=m[:i+1]+'i'+m[i+2:]
         i+=2
     if len(m)%2!=0:
         m+='x'
