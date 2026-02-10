@@ -11,6 +11,8 @@ def encryption(m):
             if(y<len(m)):
                 matrix[i][j]=m[y]
                 y+=1
+            else:
+                break
     return "".join(matrix[i][j] for j in range(x) for i in range(x)),x
         
 def decryption(e,x):
