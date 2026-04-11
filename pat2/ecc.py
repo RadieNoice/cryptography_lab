@@ -29,7 +29,7 @@ p=int(input("enetr p: "))
 x=int(input("enetr x: "))
 y=int(input("enetr y: "))
 g=[x,y]
-d=int(input("Enter private key d:"))
+d=int(input("Enter private key d:")) 
 q=mul(d,g,a,p)
 
 def encryption(a,p,m,g,q):
@@ -45,4 +45,3 @@ m2=int(input("enter y coordinate of m:"))
 m=[m1,m2]
 c1,c2=encryption(a,p,m,g,q)
 print(decryption(d,a,p,c1,c2))
-

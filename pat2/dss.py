@@ -7,6 +7,7 @@ def key_generation():
     xa=random.randint(1,q-1)#1<xa<q
     ya=pow(a,xa,p)
     return[p,q,a,xa,ya]
+
 def signing(m,a,xa,p,q):
     k=random.randint(2,q-1)#1<k<q
     k_inv=pow(k,-1,q)
